@@ -66,9 +66,8 @@ Python 기반 데이터 처리와 클라우드 환경까지 개발 영역을 확
 
 > **반려견 산책 기록 · AI 산책 코스 추천 · 동행 모집 기능을 제공하는 웹 서비스**
 
-**4인 Team Project · Deployed**
+**4인 Team Project · Deployment Completed**
 
-🌐 [Service](https://meongjaguk.cloud/)  
 📦 [Team Repository](https://github.com/dydwp/meongjaguk)
 
 `Java 21` `Spring Boot` `Spring Security` `Spring Data JPA` `MySQL`  
@@ -77,35 +76,32 @@ Python 기반 데이터 처리와 클라우드 환경까지 개발 영역을 확
 ### Key Features
 
 - Google · Kakao · Naver 기반 소셜 로그인
-- 반려견 프로필 등록 및 수정
-- 현재 위치 기반 산책 코스 추천
-- AI 기반 산책 코스 추천
-- GPS 기반 산책 경로 기록
-- 개인 활동 내역 및 산책 기록 조회
-- 산책 동행 모집 및 신청
-- 동행 요청 수락 · 거절 기능
+- 반려견 프로필 등록 및 관리
+- 현재 위치 기반 산책 코스 조회 및 AI 추천
+- GPS 기반 산책 경로 기록 및 활동 내역 조회
+- 산책 동행 모집 · 신청 · 수락 · 거절
 - Kakao Maps 기반 산책 코스 시각화
 
 ### My Role
 
-- 마이페이지 기능 개발
-- 반려견 프로필 정보 조회 및 수정 · 삭제 기능 연동
+- 마이페이지 및 산책 기록 관련 기능 개발
+- 반려견 프로필 정보 조회 · 수정 · 삭제 기능 연동
 - Spring Security 인증 사용자 기반 산책 기록 조회
-- 사용자와 산책 기록 간 관계를 확인하는 접근 권한 처리
+- 사용자와 산책 기록 간 관계를 검증하는 접근 권한 처리
 - 활동 상세 페이지 및 산책 기록 데이터 연동
 - 동행 신청 관리 기능 개발
 - 반려견 데이터 조회를 위한 Repository · Service 구조 연동
-- 추천 코스 상세 페이지의 Kakao Map 표시 기능 개발
+- 추천 코스 상세 페이지 Kakao Map 연동
 - 팀 코드 통합 과정에서 Entity · Repository 구조 조정 및 충돌 해결
 
 ### Collaboration & Deployment
 
 - `feature branch → dev → main` 기반 4인 Git 협업
-- 최신 `dev` 브랜치 병합 및 코드 충돌 해결
+- 최신 개발 브랜치 병합 및 코드 충돌 해결
 - Spring Security 기반 기존 인증 구조에 담당 기능 연동
 - Docker 기반 Spring Boot · MySQL · AI Server 통합 실행
-- HTTPS 기반 서비스 배포
-- 실서비스 도메인 환경에서 소셜 로그인과 위치 기반 기능 동작 확인
+- HTTPS 환경으로 실제 서비스 배포
+- 배포 환경에서 소셜 로그인 및 위치 기반 기능 동작 검증
 
 ---
 
@@ -126,7 +122,7 @@ Python 기반 데이터 처리와 클라우드 환경까지 개발 영역을 확
 - Crawling · Extract · Preprocess · Load 단계별 모듈화
 - `batch_id` 기반 실행 단위 데이터 관리
 - 필수값 · 식별자 · URL 중복 등 단계별 데이터 품질 검증
-- PK / UNIQUE 제약과 UPSERT를 활용한 반복 실행 데이터 정합성 관리
+- PK / UNIQUE 제약과 UPSERT 기반 반복 실행 데이터 정합성 관리
 - 외부 사이트와 DB 의존성을 분리한 pytest 단위 테스트 구성
 - Ruff 정적 코드 검사 및 GitHub Actions CI 구성
 - Windows Self-hosted Runner 기반 전체 파이프라인 자동 실행
@@ -161,25 +157,24 @@ Python 기반 데이터 처리와 클라우드 환경까지 개발 영역을 확
 - 음식점 상세 정보 조회
 - 메뉴 및 리뷰 조회
 - 리뷰 평균 평점 및 리뷰 수 제공
-- Kakao Map 기반 음식점 위치 표시
-- AI 추천 화면 및 임시 조건 분석 기능
+- Kakao Map 기반 음식점 위치 탐색
+- AI 추천 UI 및 임시 조건 분석
 
 ### Architecture & Focus
 
 - Spring Boot 기반 MVC 웹 애플리케이션 구성
 - Controller · Service · Repository 계층 분리
-- Spring Data JPA 기반 음식점 데이터 조회
-- 관계형 데이터 모델을 기반으로 음식점 · 메뉴 · 리뷰 정보 연동
+- Spring Data JPA 기반 데이터 조회
+- 관계형 데이터 모델 기반 음식점 · 메뉴 · 리뷰 정보 연동
 - **사용자 조건 → 백엔드 조회 → 데이터 처리 → 화면 표시**로 이어지는 서비스 데이터 흐름 구현
 
 ### Next
 
-- 지도 범위 검색
-- 현재 위치 기반 조회
-- 거리 기반 정렬
+- 지도 범위 검색 및 현재 위치 기반 조회
+- 거리 기반 음식점 정렬
 - AI API 기반 자연어 음식점 추천
 
-> 현재 GitHub에는 초기 작업본부터 순차적으로 정리하고 있으며, 기능 개발과 함께 저장소를 계속 업데이트하고 있습니다.
+> 현재 개발 진행 중이며, 구현 기능과 프로젝트 구조를 순차적으로 GitHub에 반영하고 있습니다.
 
 ---
 
@@ -189,7 +184,7 @@ Python 기반 데이터 처리와 클라우드 환경까지 개발 영역을 확
 
 **ERP 개발 · 유지보수 | 2015.02 - 2017.02**
 
-의류·섬유 관련 ERP 시스템의 개발 및 유지보수를 담당했습니다.
+의류 · 섬유 관련 ERP 시스템의 개발 및 유지보수를 담당했습니다.
 
 - 사용자 계정 및 품목 데이터 등록 · 관리 기능 유지보수
 - 업무 요구사항에 따른 출력물 및 브랜드별 양식 개선

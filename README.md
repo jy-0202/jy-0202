@@ -52,7 +52,7 @@
 ## 🐕 멍자국
 ### 반려견 산책 코스 추천 및 산책 기록 웹 서비스
 
-**4인 Team Project · 2026.09 ~ 2026.10**
+**4인 Team Project · 2026.09.21 ~ 2026.10.08**
 
 반려견과의 산책을 중심으로 **산책 코스 추천, GPS 산책 기록, 동행 모집 및 커뮤니티** 기능을 하나의 사용자 흐름으로 구성한 웹 서비스입니다.
 
@@ -112,9 +112,9 @@ https://github.com/dydwp/meongjaguk
 ## 🍽️ DiningCode Dynamic Crawling Pipeline
 ### 동적 웹 데이터 수집·전처리·검증 및 적재 파이프라인
 
-**Personal Project · 2026.08 ~ 2026.09**
+**Personal Project · 2026.08.14 ~ 2026.09.13**
 
-Selenium으로 동적 웹페이지의 음식점 데이터를 제한적으로 수집하고 **Raw → Interim → Processed → MySQL** 단계로 처리하는 데이터 파이프라인을 구축한 개인 프로젝트입니다.
+Selenium을 활용하여 동적 웹페이지의 음식점 데이터를 제한적으로 수집하고, **Raw → Interim → Processed → MySQL** 단계로 처리하는 데이터 파이프라인을 구축한 개인 프로젝트입니다.
 
 **Tech**
 
@@ -165,9 +165,9 @@ https://github.com/jy-0202/diningcode-dynamic-crawling-pipeline
 ## 🍴 Today Pick
 ### 조건 기반 맛집 탐색 및 추천 웹 서비스
 
-**Personal Project · 2026.07 ~**
+**Personal Project · 2026.07 ~ 2026.09**
 
-지역·카테고리·가격대·태그 등의 조건으로 음식점을 탐색하고 상세 정보와 지도 위치를 확인할 수 있도록 개발 중인 Spring Boot 기반 개인 웹 프로젝트입니다.
+지역·카테고리·가격대·태그 등의 조건으로 음식점을 탐색하고, 상세 정보와 지도 위치를 확인할 수 있도록 구현한 Spring Boot 기반 개인 웹 프로젝트입니다.
 
 **Tech**
 
@@ -182,13 +182,6 @@ https://github.com/jy-0202/diningcode-dynamic-crawling-pipeline
 - Controller - Service - Repository 계층 구조를 적용한 기능 분리
 - 지도 이동 영역을 기준으로 음식점 카드와 결과 개수를 동기화하여 **지도와 검색 목록의 데이터 일관성 개선**
 - 자연어 추천 기능 확장을 위한 AI 추천 화면 및 Service·DTO 기본 구조 구성
-
-### Next
-
-- 현재 위치 기반 주변 음식점 조회 및 거리순 정렬
-- 지도 영역과 검색 조건을 결합한 탐색 기능
-- 음식점·메뉴·리뷰 데이터를 활용한 추천 방식 고도화
-- 자연어에서 사용자 조건을 추출하여 기존 검색 기능과 연계하는 AI 추천 기능
 
 **Repository**  
 https://github.com/jy-0202/today-pick

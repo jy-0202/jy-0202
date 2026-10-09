@@ -1,6 +1,10 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=rect&color=0:4F6D7A,100:6DB33F&height=120&text=Choi%20Ju%20Young&fontSize=40&fontColor=ffffff&fontAlignY=43&desc=Backend%20Developer%20%C2%B7%20Java%20%26%20Spring%20Boot&descAlignY=73&descSize=15&descColor=ffffff)
+# Choi Ju Young
+
+### Backend Developer · Java & Spring Boot
+
+서비스의 구조와 데이터 흐름을 이해하고, 안정적인 백엔드 시스템을 만드는 개발자입니다.
 
 </div>
 
